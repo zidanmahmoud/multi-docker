@@ -25,8 +25,8 @@ jobs:
     - name: Build the client image
       run: docker build ./client -t mahmoudzidan/multi-client
 
-    - name: Build the ngix image
-      run: docker build ./ngix -t mahmoudzidan/multi-ngix
+    - name: Build the nginx image
+      run: docker build ./nginx -t mahmoudzidan/multi-nginx
 
     - name: Build the server image
       run: docker build ./server -t mahmoudzidan/multi-server
