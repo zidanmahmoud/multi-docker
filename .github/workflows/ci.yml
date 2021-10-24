@@ -39,3 +39,10 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSOWRD }}
+
+    - name: Push to Docker Hub
+      run: |
+        docker push mahmoudzidan/multi-client
+        docker push mahmoudzidan/multi-ngix
+        docker push mahmoudzidan/multi-server
+        docker push mahmoudzidan/multi-worker
